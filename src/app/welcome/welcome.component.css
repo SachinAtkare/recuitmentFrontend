@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: white;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  
+  .welcome-container {
+    min-height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url('https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .welcome-content {
+    padding: 2rem;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #4CAF50;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  
+  .word {
+    opacity: 0;
+    transform: translateX(-50px);
+    display: inline-block;
+  }
+  
+  .word1 {
+    animation: slideInWord 0.8s ease forwards;
+  }
+  
+  .word2 {
+    animation: slideInWord 0.8s ease forwards 0.4s;
+  }
+  
+  @keyframes slideInWord {
+    from {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #ffffff;
+    margin-bottom: 2rem;
+    opacity: 0;
+    animation: fadeIn 0.8s ease forwards 0.8s;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .login-button {
+    font-family: 'Poppins', sans-serif;
+    padding: 1rem 3rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: fadeIn 0.8s ease forwards 1.2s;
+  }
+  
+  .login-button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  }
