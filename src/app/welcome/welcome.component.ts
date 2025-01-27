@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Route, Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-welcome',
@@ -8,4 +10,9 @@ import { Component } from '@angular/core';
 })
 export class WelcomeComponent {
 
+  constructor(private router:Router){}
+
+  loginpage(){
+    this.router.navigate(['/login']);
+  }
 }

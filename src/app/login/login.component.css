@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #d1fae5; /* Light green background */
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .card {
+    background: white;
+    border-radius: 12px; /* Slightly less rounded for a more modern look */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Stronger shadow for depth */
+    padding: 30px;
+    width: 100%;
+    border: 1px solid #e2e8f0; /* Light border for definition */
+  }
+  
+  .title {
+    font-size: 26px; /* Slightly larger for emphasis */
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px; /* Increased margin for spacing */
+  }
+  
+  label {
+    display: block;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px; /* Rounded corners for a soft, modern feel */
+    font-size: 15px; /* Slightly larger font for easier readability */
+    transition: all 0.3s ease;
+  }
+  
+  input:focus {
+    border-color: #3b82f6; /* Blue border on focus for better interactivity */
+    outline: none;
+  }
+  
+  .login-button {
+    width: 100%;
+    padding: 12px;
+    background: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 10px; /* Rounded corners to match the input fields */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .login-button:hover {
+    background: #2563eb;
+    transform: scale(1.05); /* Slightly scale up on hover for modern feel */
+  }
+  
