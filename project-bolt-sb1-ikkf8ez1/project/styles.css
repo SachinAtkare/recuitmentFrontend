@@ -1,0 +1,59 @@
+/* Custom styles for employee cards and interactions */
+.employee-card {
+  transition: all 0.2s ease-in-out;
+}
+
+.employee-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 9999px;
+  background-color: #e0e7ff;
+  color: #4f46e5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.status-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.status-active {
+  background-color: #dcfce7;
+  color: #15803d;
+}
+
+.status-leave {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.status-remote {
+  background-color: #e0e7ff;
+  color: #4338ca;
+}
+
+/* Smooth transitions */
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+/* Focus styles for interactive elements */
+input:focus, select:focus, button:focus {
+  outline: none;
+  ring: 2px;
+  ring-offset-2;
+  ring-indigo-500;
+}
