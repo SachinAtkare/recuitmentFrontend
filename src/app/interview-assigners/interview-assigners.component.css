@@ -1,0 +1,64 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.assignContainer{
+    width: 70vw;
+    height: 85vh;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    border-radius: 20px;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+}
+
+.interviwers{
+    height: 400px;
+    width: 300px;
+    /* border: 2px solid red; */
+    margin: 20px;
+    text-align: center;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+.Assigner{
+    padding: 5px;
+    height: 250px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+.assignbtn{
+    padding: 10px;
+    width: 200px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: rgb(77, 251, 33)
+}
+.movebtn{
+    position: absolute;
+    bottom: 20px;
+    width: 200px;
+    right:10px;
+    border: none;
+    padding: 10px;
+    background-color: rgb(77, 251, 33);
+    border-radius: 5px;
+    cursor: pointer;
+
+
+}
+.assignbtn:hover{
+   
+    background-color: rgb(50, 176, 19)
+}
+.movebtn:hover{
+    background-color: rgb(50, 176, 19)
+
+}
