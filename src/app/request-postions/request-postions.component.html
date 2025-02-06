@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./request-postions.component.css">
+</head>
+<body>
+
+    <table class="requesttable">
+        <thead>
+        <tr>
+          <th><h3>Department Name</h3></th>
+          <th><h3>Position id</h3></th>
+          <th><h3>Position Name</h3></th>
+          <th><h3>Number of vacancies</h3></th>
+          <th><h3>Move to L0</h3></th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- jobid!: number;
+        dept_name!: string;
+        positionname!: string;
+        number_of_pos!: number; -->
+        <tr *ngFor= "let ref of positions" >
+          <td>{{ref.dept_name}}</td>
+          <td>{{ref.jobid}}</td>
+          <td>{{ref.positionname}}</td>
+          <td>{{ref.number_of_pos}}</td> 
+          <td><button class="movebtn">Move</button></td>  
+        </tr>
+    </tbody>
+      </table>
+</body>
+</html>

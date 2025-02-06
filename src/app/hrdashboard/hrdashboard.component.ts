@@ -7,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './hrdashboard.component.css'
 })
 export class HRDashboardComponent {
-
+  showpositions(){
+    console.log("hello")
+  }
 }

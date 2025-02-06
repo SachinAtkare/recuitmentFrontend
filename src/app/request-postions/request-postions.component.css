@@ -1,10 +1,8 @@
 body{
-    /* display: flex; */
-    /* justify-content: center; */
+    display: flex;  
+    justify-content: center;
     background-color: rgb(254, 250, 250);
 }
-
-
 
 table, th, td {
     border: 1px solid black;
@@ -12,24 +10,24 @@ table, th, td {
     padding: 10px;
   }
 
-  .positiontable{
+  .requesttable{
    background-color: rgb(255, 255, 255);
     text-align: center;
-   width: 95vw;
+   width: 55vw;
    margin-left: 20px;
-   
   }
 
-  .positiontable .posbtn{
+  .movebtn{
     cursor: pointer;
     width: 100px;
     height: 30px;
     border: none;
-    background-color: rgb(89, 251, 48)
+    background-color: rgb(96, 252, 57)
   }
 
-  .positiontable .posbtn:hover{
-    background-color: azure;
+  .requesttable .movebtn:hover{
+    background-color: aliceblue;
+
   }
 
   
